@@ -9,37 +9,49 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
-
+@property (weak, readonly) UIStoryboard *storyboard;
 @end
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userDidLogin) name:notificationLogin object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userDidLogout) name:notificationLogout object:
+     nil];
     return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+- (id) createTodoNavVc { return [self.storyboard instantiateViewControllerWithIdentifier:@"todoNav"]; }
+
+- (void) userDidLogin {
+    [self setNewRootVc:[self createTodoNavVc] animated:YES];
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+- (void) userDidLogout {
+    [self setNewRootVc:[self.storyboard instantiateInitialViewController] animated:YES];
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+- (void) setNewRootVc:(UIViewController *) newVc animated:(BOOL) animated
+{
+    if (!animated) {
+        self.window.rootViewController = newVc;
+        return;
+    }
+    [UIView transitionFromView:self.window.rootViewController.view
+                        toView:newVc.view
+                      duration:0.4
+                       options:UIViewAnimationOptionTransitionFlipFromBottom
+                    completion:^(BOOL finished)
+     {
+         if (!finished) return;
+         self.window.rootViewController = newVc;
+     }];
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+- (UIStoryboard *)storyboard {
+    return self.window.rootViewController.storyboard;
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
 
 @end

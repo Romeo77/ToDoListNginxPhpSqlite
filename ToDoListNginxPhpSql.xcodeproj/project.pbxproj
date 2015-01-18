@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04BFCF37C95ECED74896EBF0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8989EEDE5C2A87FDB993F9 /* libPods.a */; };
 		30A13F681A63376A007FF717 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A13F671A63376A007FF717 /* main.m */; };
 		30A13F6B1A63376A007FF717 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A13F6A1A63376A007FF717 /* AppDelegate.m */; };
-		30A13F6E1A63376A007FF717 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A13F6D1A63376A007FF717 /* ViewController.m */; };
 		30A13F711A63376A007FF717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A13F6F1A63376A007FF717 /* Main.storyboard */; };
 		30A13F731A63376A007FF717 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A13F721A63376A007FF717 /* Images.xcassets */; };
 		30A13F761A63376A007FF717 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A13F741A63376A007FF717 /* LaunchScreen.xib */; };
 		30A13F821A63376A007FF717 /* ToDoListNginxPhpSqlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A13F811A63376A007FF717 /* ToDoListNginxPhpSqlTests.m */; };
+		30A13F911A641ADE007FF717 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A13F901A641ADE007FF717 /* LoginViewController.m */; };
+		30A13F9A1A64228E007FF717 /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A13F991A64228E007FF717 /* CreateAccountViewController.m */; };
+		30A13F9D1A6726F5007FF717 /* UIMessagesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A13F9C1A6726F5007FF717 /* UIMessagesHelper.m */; };
+		30A13FA01A6891B0007FF717 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A13F9F1A6891B0007FF717 /* BaseViewController.m */; };
+		30A13FA31A689247007FF717 /* TodoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A13FA21A689247007FF717 /* TodoTableViewController.m */; };
+		30A13FA61A697495007FF717 /* DataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A13FA51A697495007FF717 /* DataClass.m */; };
+		30A13FA91A6A81F7007FF717 /* LinkWithServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A13FA81A6A81F7007FF717 /* LinkWithServer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +34,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B8989EEDE5C2A87FDB993F9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D73FD3E4188359382396636 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		30A13F621A63376A007FF717 /* ToDoListNginxPhpSql.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListNginxPhpSql.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A13F661A63376A007FF717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30A13F671A63376A007FF717 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		30A13F691A63376A007FF717 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		30A13F6A1A63376A007FF717 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		30A13F6C1A63376A007FF717 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		30A13F6D1A63376A007FF717 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		30A13F701A63376A007FF717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30A13F721A63376A007FF717 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		30A13F751A63376A007FF717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		30A13F7B1A63376A007FF717 /* ToDoListNginxPhpSqlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListNginxPhpSqlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A13F801A63376A007FF717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30A13F811A63376A007FF717 /* ToDoListNginxPhpSqlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListNginxPhpSqlTests.m; sourceTree = "<group>"; };
+		30A13F8B1A63FEF8007FF717 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		30A13F8F1A641ADE007FF717 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		30A13F901A641ADE007FF717 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		30A13F981A64228E007FF717 /* CreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountViewController.h; sourceTree = "<group>"; };
+		30A13F991A64228E007FF717 /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
+		30A13F9B1A6726F5007FF717 /* UIMessagesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMessagesHelper.h; sourceTree = "<group>"; };
+		30A13F9C1A6726F5007FF717 /* UIMessagesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMessagesHelper.m; sourceTree = "<group>"; };
+		30A13F9E1A6891B0007FF717 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		30A13F9F1A6891B0007FF717 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		30A13FA11A689247007FF717 /* TodoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoTableViewController.h; sourceTree = "<group>"; };
+		30A13FA21A689247007FF717 /* TodoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoTableViewController.m; sourceTree = "<group>"; };
+		30A13FA41A697495007FF717 /* DataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataClass.h; sourceTree = "<group>"; };
+		30A13FA51A697495007FF717 /* DataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataClass.m; sourceTree = "<group>"; };
+		30A13FA71A6A81F7007FF717 /* LinkWithServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkWithServer.h; sourceTree = "<group>"; };
+		30A13FA81A6A81F7007FF717 /* LinkWithServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkWithServer.m; sourceTree = "<group>"; };
+		42DCB9AE5FA6D491DBB441E8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BFCF37C95ECED74896EBF0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22604DA58B4CAC5EB2F2D714 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B8989EEDE5C2A87FDB993F9 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		30A13F591A63376A007FF717 = {
 			isa = PBXGroup;
 			children = (
+				30A13F8B1A63FEF8007FF717 /* PrefixHeader.pch */,
 				30A13F641A63376A007FF717 /* ToDoListNginxPhpSql */,
 				30A13F7E1A63376A007FF717 /* ToDoListNginxPhpSqlTests */,
 				30A13F631A63376A007FF717 /* Products */,
+				CC19105B1D11C0A0817924BE /* Pods */,
+				22604DA58B4CAC5EB2F2D714 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,11 +118,23 @@
 			children = (
 				30A13F691A63376A007FF717 /* AppDelegate.h */,
 				30A13F6A1A63376A007FF717 /* AppDelegate.m */,
-				30A13F6C1A63376A007FF717 /* ViewController.h */,
-				30A13F6D1A63376A007FF717 /* ViewController.m */,
+				30A13F9E1A6891B0007FF717 /* BaseViewController.h */,
+				30A13F9F1A6891B0007FF717 /* BaseViewController.m */,
+				30A13F8F1A641ADE007FF717 /* LoginViewController.h */,
+				30A13F901A641ADE007FF717 /* LoginViewController.m */,
+				30A13F981A64228E007FF717 /* CreateAccountViewController.h */,
+				30A13F991A64228E007FF717 /* CreateAccountViewController.m */,
+				30A13FA11A689247007FF717 /* TodoTableViewController.h */,
+				30A13FA21A689247007FF717 /* TodoTableViewController.m */,
+				30A13FA41A697495007FF717 /* DataClass.h */,
+				30A13FA51A697495007FF717 /* DataClass.m */,
 				30A13F6F1A63376A007FF717 /* Main.storyboard */,
 				30A13F721A63376A007FF717 /* Images.xcassets */,
 				30A13F741A63376A007FF717 /* LaunchScreen.xib */,
+				30A13FA71A6A81F7007FF717 /* LinkWithServer.h */,
+				30A13FA81A6A81F7007FF717 /* LinkWithServer.m */,
+				30A13F9B1A6726F5007FF717 /* UIMessagesHelper.h */,
+				30A13F9C1A6726F5007FF717 /* UIMessagesHelper.m */,
 				30A13F651A63376A007FF717 /* Supporting Files */,
 			);
 			path = ToDoListNginxPhpSql;
@@ -119,6 +166,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CC19105B1D11C0A0817924BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D73FD3E4188359382396636 /* Pods.debug.xcconfig */,
+				42DCB9AE5FA6D491DBB441E8 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30A13F851A63376A007FF717 /* Build configuration list for PBXNativeTarget "ToDoListNginxPhpSql" */;
 			buildPhases = (
+				5F3D639E90764C041FA311DC /* Check Pods Manifest.lock */,
 				30A13F5E1A63376A007FF717 /* Sources */,
 				30A13F5F1A63376A007FF717 /* Frameworks */,
 				30A13F601A63376A007FF717 /* Resources */,
+				F1BEA5CB3BEFC4728DFB19EE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,14 +272,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5F3D639E90764C041FA311DC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F1BEA5CB3BEFC4728DFB19EE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		30A13F5E1A63376A007FF717 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30A13F6E1A63376A007FF717 /* ViewController.m in Sources */,
+				30A13F9A1A64228E007FF717 /* CreateAccountViewController.m in Sources */,
+				30A13FA01A6891B0007FF717 /* BaseViewController.m in Sources */,
 				30A13F6B1A63376A007FF717 /* AppDelegate.m in Sources */,
 				30A13F681A63376A007FF717 /* main.m in Sources */,
+				30A13F911A641ADE007FF717 /* LoginViewController.m in Sources */,
+				30A13FA31A689247007FF717 /* TodoTableViewController.m in Sources */,
+				30A13FA91A6A81F7007FF717 /* LinkWithServer.m in Sources */,
+				30A13FA61A697495007FF717 /* DataClass.m in Sources */,
+				30A13F9D1A6726F5007FF717 /* UIMessagesHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,8 +438,10 @@
 		};
 		30A13F861A63376A007FF717 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D73FD3E4188359382396636 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = ToDoListNginxPhpSql/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,8 +450,10 @@
 		};
 		30A13F871A63376A007FF717 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42DCB9AE5FA6D491DBB441E8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = ToDoListNginxPhpSql/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +513,7 @@
 				30A13F871A63376A007FF717 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30A13F881A63376A007FF717 /* Build configuration list for PBXNativeTarget "ToDoListNginxPhpSqlTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +522,7 @@
 				30A13F8A1A63376A007FF717 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

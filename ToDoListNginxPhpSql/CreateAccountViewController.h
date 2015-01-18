@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  CreateAccountViewController.h
 //  ToDoListNginxPhpSql
 //
 //  Created by Roman on 12.01.15.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface CreateAccountViewController : BaseViewController
 
 @end
-
